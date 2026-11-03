@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+  <title id="title">Animated security operations pipeline</title>
+  <desc id="desc">Telemetry flows through collection, detection, alerting, investigation, and response stages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#102a43"/></linearGradient>
+    <linearGradient id="line"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .packet { animation: move 6s linear infinite; }
+      .p2 { animation-delay:-2s; }.p3 { animation-delay:-4s; }
+      .blink { animation: blink 1.2s steps(2,end) infinite; }
+      .log1 { animation: logs 3s ease-in-out infinite; }.log2 { animation: logs 3s .7s ease-in-out infinite; }.log3 { animation: logs 3s 1.4s ease-in-out infinite; }
+      @keyframes move { from { offset-distance:0%; } to { offset-distance:100%; } }
+      @keyframes blink { 50% { opacity:.2; } }
+      @keyframes logs { 0%,100% { opacity:.25; transform:translateX(-5px); } 50% { opacity:1; transform:translateX(5px); } }
+    </style>
+    <path id="route" d="M110 125H890"/>
+  </defs>
+  <rect width="1000" height="250" rx="22" fill="url(#bg)"/>
+  <path d="M110 125H890" stroke="#234660" stroke-width="8" stroke-linecap="round"/>
+  <path d="M110 125H890" stroke="url(#line)" stroke-width="2" stroke-dasharray="8 13"/>
+  <g fill="#0b2037" stroke="#38bdf8" stroke-width="2" font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(110 125)"><circle r="43"/><text y="-4" fill="#e6f6ff" font-size="13" stroke="none">ENDPOINT</text><text y="15" fill="#7dd3fc" font-size="11" stroke="none">activity</text></g>
+    <g transform="translate(305 125)"><circle r="43"/><text y="-4" fill="#e6f6ff" font-size="13" stroke="none">TELEMETRY</text><text y="15" fill="#7dd3fc" font-size="11" stroke="none">collection</text></g>
+    <g transform="translate(500 125)"><circle r="43"/><text y="-4" fill="#e6f6ff" font-size="13" stroke="none">DETECTION</text><text y="15" fill="#7dd3fc" font-size="11" stroke="none">rules</text></g>
+    <g transform="translate(695 125)"><circle r="43"/><text y="-4" fill="#e6f6ff" font-size="13" stroke="none">ALERT</text><text y="15" fill="#7dd3fc" font-size="11" stroke="none">triage</text></g>
+    <g transform="translate(890 125)"><circle r="43" stroke="#2dd4bf"/><text y="-4" fill="#e6f6ff" font-size="13" stroke="none">INCIDENT</text><text y="15" fill="#99f6e4" font-size="11" stroke="none">investigate</text></g>
+  </g>
+  <g filter="url(#glow)" fill="#67e8f9">
+    <circle class="packet" r="6" style="offset-path:path('M110 125H890')"/>
+    <circle class="packet p2" r="5" style="offset-path:path('M110 125H890')"/>
+    <circle class="packet p3" r="4" style="offset-path:path('M110 125H890')"/>
+  </g>
+  <g transform="translate(400 25)" fill="#2dd4bf"><rect class="log1" width="70" height="3" rx="2"/><rect class="log2" x="75" width="42" height="3" rx="2"/><rect class="log3" x="122" width="77" height="3" rx="2"/></g>
+  <text class="blink" x="500" y="222" fill="#2dd4bf" font-family="monospace" font-size="13" text-anchor="middle">monitor → detect → validate → investigate → document_</text>
+</svg>

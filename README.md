@@ -4,12 +4,16 @@
 
 ### Cybersecurity Student · Security Operations · Detection Engineering · Network & Cloud Security
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=700&color=38BDF8&center=true&vCenter=true&repeat=true&width=850&lines=Monitoring+telemetry+%E2%86%92+Engineering+detections+%E2%86%92+Investigating+alerts;Building+MediShield+SOC+%7C+TrustTrace+AI+%7C+Security+Labs;Learning+AWS+Cloud+Security+and+CompTIA+Security%2B" alt="Animated cybersecurity focus" />
+
 University of South Florida cybersecurity student building defensive security projects around SIEM monitoring, endpoint telemetry, network analysis, phishing detection, and incident investigation. I connect security-relevant activity to auditable events, tested detections, analyst decisions, and documented outcomes.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sangambabupoudel)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View-111827?style=flat-square&logo=vercel&logoColor=white)](https://sangam-dev.vercel.app)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sangampoudel642@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-SangamBabuPoudel-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/SangamBabuPoudel)
+
+📫 **sangampoudel642@gmail.com**
 
 </div>
 
@@ -30,6 +34,10 @@ University of South Florida cybersecurity student building defensive security pr
 ---
 
 ## Flagship security work
+
+<p align="center">
+  <img src="assets/security-operations.svg" alt="Animated security operations pipeline" width="100%" />
+</p>
 
 ### MediShield SOC — Healthcare Security Operations & Detection Engineering Lab
 
@@ -144,6 +152,14 @@ All offensive-security work is performed in authorized lab or course environment
 - Developing AWS cloud security fundamentals with a long-term goal of adding evidence-backed cloud monitoring to MediShield
 - Studying research fundamentals and literature related to uncertainty-aware LLMs and cybersecurity incident investigation
 
+## Contribution activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SangamBabuPoudel/SangamBabuPoudel/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SangamBabuPoudel/SangamBabuPoudel/output/github-contribution-grid-snake.svg" />
+  <img alt="Animated GitHub contribution snake" src="https://raw.githubusercontent.com/SangamBabuPoudel/SangamBabuPoudel/output/github-contribution-grid-snake.svg" />
+</picture>
+
 ## Education
 
 **University of South Florida**  
@@ -158,5 +174,7 @@ All offensive-security work is performed in authorized lab or course environment
 <div align="center">
 
 Seeking cybersecurity, SOC, security analysis, detection engineering, network security, and cloud security internship opportunities.
+
+[![Email Me](https://img.shields.io/badge/Email_Me-sangampoudel642%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sangampoudel642@gmail.com)
 
 </div>

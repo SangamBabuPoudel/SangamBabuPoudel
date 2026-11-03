@@ -2,6 +2,25 @@
   <title id="title">Sangam Babu Poudel — Cybersecurity Portfolio</title>
   <desc id="desc">A dark blue security operations banner with a shield, network nodes, and professional focus areas.</desc>
   <defs>
+    <style>
+      .scan { animation: scan 4.5s ease-in-out infinite; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .pulse2 { animation: pulse 2.4s .8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .pulse3 { animation: pulse 2.4s 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .dash { stroke-dasharray: 9 12; animation: flow 2s linear infinite; }
+      .shield { animation: breathe 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .cursor { animation: blink 1s steps(2,end) infinite; }
+      .chip { animation: lift 4s ease-in-out infinite; }
+      .chip2 { animation: lift 4s .7s ease-in-out infinite; }
+      .chip3 { animation: lift 4s 1.4s ease-in-out infinite; }
+      .chip4 { animation: lift 4s 2.1s ease-in-out infinite; }
+      @keyframes scan { 0%,100% { transform: translateY(-35px); opacity:0; } 15%,85% { opacity:.48; } 50% { transform:translateY(330px); opacity:.48; } }
+      @keyframes pulse { 0%,100% { transform:scale(.8); opacity:.45; } 50% { transform:scale(1.35); opacity:1; } }
+      @keyframes flow { to { stroke-dashoffset:-42; } }
+      @keyframes breathe { 0%,100% { transform:scale(1); } 50% { transform:scale(1.035); } }
+      @keyframes blink { 50% { opacity:0; } }
+      @keyframes lift { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-5px); } }
+    </style>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
       <stop offset="0.52" stop-color="#0b1e36"/>
@@ -22,21 +41,22 @@
 
   <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
   <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <rect class="scan" x="20" y="0" width="1160" height="2" rx="1" fill="#67e8f9" filter="url(#glow)"/>
   <circle cx="1090" cy="46" r="170" fill="#0ea5e9" opacity=".06"/>
   <circle cx="1040" cy="330" r="210" fill="#14b8a6" opacity=".05"/>
 
-  <g opacity=".55" stroke="#38bdf8" stroke-width="1.5">
-    <path d="M890 82L980 42l92 58 74-18M892 82l54 94 104-28 96 62M946 176l-42 94 120 42 122-102M1050 148l-26 164" fill="none"/>
+  <g opacity=".65" stroke="#38bdf8" stroke-width="1.5">
+    <path class="dash" d="M890 82L980 42l92 58 74-18M892 82l54 94 104-28 96 62M946 176l-42 94 120 42 122-102M1050 148l-26 164" fill="none"/>
     <g fill="#07111f" stroke="#67e8f9" stroke-width="2">
-      <circle cx="890" cy="82" r="6"/><circle cx="980" cy="42" r="6"/>
-      <circle cx="1072" cy="100" r="6"/><circle cx="1146" cy="82" r="6"/>
-      <circle cx="946" cy="176" r="6"/><circle cx="1050" cy="148" r="6"/>
-      <circle cx="1146" cy="210" r="6"/><circle cx="904" cy="270" r="6"/>
-      <circle cx="1024" cy="312" r="6"/>
+      <circle class="pulse" cx="890" cy="82" r="6"/><circle class="pulse2" cx="980" cy="42" r="6"/>
+      <circle class="pulse3" cx="1072" cy="100" r="6"/><circle class="pulse" cx="1146" cy="82" r="6"/>
+      <circle class="pulse2" cx="946" cy="176" r="6"/><circle class="pulse3" cx="1050" cy="148" r="6"/>
+      <circle class="pulse" cx="1146" cy="210" r="6"/><circle class="pulse2" cx="904" cy="270" r="6"/>
+      <circle class="pulse3" cx="1024" cy="312" r="6"/>
     </g>
   </g>
 
-  <g transform="translate(72 72)" filter="url(#glow)">
+  <g class="shield" transform="translate(72 72)" filter="url(#glow)">
     <path d="M74 0L136 23v52c0 49-27 84-62 102C39 159 12 124 12 75V23L74 0Z" fill="#0b2037" stroke="url(#accent)" stroke-width="4"/>
     <path d="M74 27L108 40v35c0 29-14 52-34 66-20-14-34-37-34-66V40l34-13Z" fill="none" stroke="#7dd3fc" stroke-width="3"/>
     <path d="M57 78l12 12 25-30" fill="none" stroke="#2dd4bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
@@ -46,12 +66,13 @@
     <text x="244" y="104" fill="#e6f6ff" font-size="42" font-weight="700" letter-spacing=".4">Sangam Babu Poudel</text>
     <text x="246" y="145" fill="#7dd3fc" font-size="20" font-weight="600" letter-spacing="2.2">CYBERSECURITY • SECURITY OPERATIONS • DETECTION ENGINEERING</text>
     <text x="246" y="191" fill="#b8c9dc" font-size="18">Turning application and endpoint activity into defensible security evidence.</text>
+    <rect class="cursor" x="804" y="174" width="3" height="22" fill="#2dd4bf"/>
 
     <g transform="translate(246 228)" font-size="15" font-weight="600">
-      <g><rect width="154" height="42" rx="21" fill="#0f2a44" stroke="#38bdf8" stroke-opacity=".65"/><text x="77" y="27" text-anchor="middle" fill="#bae6fd">SIEM Monitoring</text></g>
-      <g transform="translate(168)"><rect width="168" height="42" rx="21" fill="#0f2a44" stroke="#38bdf8" stroke-opacity=".65"/><text x="84" y="27" text-anchor="middle" fill="#bae6fd">Detection Engineering</text></g>
-      <g transform="translate(350)"><rect width="150" height="42" rx="21" fill="#0f2a44" stroke="#2dd4bf" stroke-opacity=".65"/><text x="75" y="27" text-anchor="middle" fill="#99f6e4">Network Security</text></g>
-      <g transform="translate(514)"><rect width="134" height="42" rx="21" fill="#0f2a44" stroke="#2dd4bf" stroke-opacity=".65"/><text x="67" y="27" text-anchor="middle" fill="#99f6e4">Cloud Security</text></g>
+      <g class="chip"><rect width="154" height="42" rx="21" fill="#0f2a44" stroke="#38bdf8" stroke-opacity=".65"/><text x="77" y="27" text-anchor="middle" fill="#bae6fd">SIEM Monitoring</text></g>
+      <g class="chip2" transform="translate(168)"><rect width="168" height="42" rx="21" fill="#0f2a44" stroke="#38bdf8" stroke-opacity=".65"/><text x="84" y="27" text-anchor="middle" fill="#bae6fd">Detection Engineering</text></g>
+      <g class="chip3" transform="translate(350)"><rect width="150" height="42" rx="21" fill="#0f2a44" stroke="#2dd4bf" stroke-opacity=".65"/><text x="75" y="27" text-anchor="middle" fill="#99f6e4">Network Security</text></g>
+      <g class="chip4" transform="translate(514)"><rect width="134" height="42" rx="21" fill="#0f2a44" stroke="#2dd4bf" stroke-opacity=".65"/><text x="67" y="27" text-anchor="middle" fill="#99f6e4">Cloud Security</text></g>
     </g>
   </g>
 
