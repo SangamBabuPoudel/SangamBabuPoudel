@@ -1,10 +1,10 @@
 <div align="center">
 
-# Sangam Babu Poudel
+![Sangam Babu Poudel — Cybersecurity Portfolio](assets/cyber-banner.svg)
 
-### Cybersecurity Student | Security Operations | Detection Engineering | Network & Cloud Security
+### Cybersecurity Student · Security Operations · Detection Engineering · Network & Cloud Security
 
-University of South Florida cybersecurity student building hands-on defensive security projects around SIEM monitoring, endpoint telemetry, network analysis, phishing detection, and incident investigation. My current work connects application activity to auditable security events, detections, analyst decisions, and documented outcomes while I develop stronger cloud security foundations.
+University of South Florida cybersecurity student building defensive security projects around SIEM monitoring, endpoint telemetry, network analysis, phishing detection, and incident investigation. I connect security-relevant activity to auditable events, tested detections, analyst decisions, and documented outcomes.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sangambabupoudel)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View-111827?style=flat-square&logo=vercel&logoColor=white)](https://sangam-dev.vercel.app)
@@ -15,9 +15,27 @@ University of South Florida cybersecurity student building hands-on defensive se
 
 ---
 
+<div align="center">
+
+### Security Operations → Detection Engineering → Network Security → Cloud Security
+
+</div>
+
+| Current focus | Evidence |
+|:---|:---|
+| **Build secure, observable systems** | Flask application controls, structured audit telemetry, browser-local analysis |
+| **Write and validate detections** | Custom Wazuh rules, regression fixtures, live lab alert validation |
+| **Investigate before concluding** | Incident disposition, evidence references, privacy review, documented limitations |
+
+---
+
 ## Flagship security work
 
 ### MediShield SOC — Healthcare Security Operations & Detection Engineering Lab
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SangamBabuPoudel/MediShield-SOC/main/docs/public-evidence/screenshots/soc-dashboard.png" alt="MediShield SOC dashboard" width="72%" />
+</p>
 
 **Problem:** A valid employee login does not automatically authorize access to every patient record, and denied or abnormal access must become useful security evidence.
 
@@ -46,6 +64,17 @@ flowchart LR
 > Architectural boundary: MediShield uses a human-initiated, validated alert-snapshot import; it does not claim a live Wazuh API integration or a production healthcare deployment.
 
 ### TrustTrace AI — Privacy-First Browser Phishing Detection
+
+<table>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/SangamBabuPoudel/TrustTraceAI/main/docs/screenshots/popup-dashboard.png" alt="TrustTrace popup dashboard" /></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/SangamBabuPoudel/TrustTraceAI/main/docs/screenshots/high-risk-warning.png" alt="TrustTrace high-risk warning" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Explainable browser-local risk summary</sub></td>
+    <td align="center"><sub>Pre-visit high-risk warning</sub></td>
+  </tr>
+</table>
 
 **Problem:** Phishing defenses need to identify deceptive URLs without treating every login page or brand mention as malicious—or unnecessarily transmitting browsing data.
 
@@ -89,6 +118,15 @@ flowchart LR
 All offensive-security work is performed in authorized lab or course environments.
 
 ## Security stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Wazuh-005571?style=for-the-badge&logo=wazuh&logoColor=white" alt="Wazuh" />
+  <img src="https://img.shields.io/badge/Sysmon-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Sysmon" />
+  <img src="https://img.shields.io/badge/Elastic-005571?style=for-the-badge&logo=elastic&logoColor=white" alt="Elastic" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=111827" alt="Linux" />
+</p>
 
 | Focus | Tools and technologies |
 |---|---|
