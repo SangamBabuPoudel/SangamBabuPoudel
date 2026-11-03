@@ -57,17 +57,9 @@ I built an isolated educational healthcare application using entirely synthetic 
 
 [Repository](https://github.com/SangamBabuPoudel/MediShield-SOC) · [Architecture](https://github.com/SangamBabuPoudel/MediShield-SOC/blob/main/docs/architecture.md) · [Detection engineering](https://github.com/SangamBabuPoudel/MediShield-SOC/blob/main/docs/detection-engineering.md) · [Incident #001](https://github.com/SangamBabuPoudel/MediShield-SOC/blob/main/docs/incident-001.md)
 
-```mermaid
-flowchart LR
-    A[Application activity] --> B[HMAC-chained audit telemetry]
-    B --> C[Wazuh agent<br/>Windows]
-    C --> D[Wazuh manager<br/>Ubuntu]
-    D --> E[Custom rules<br/>110101–110104]
-    E --> F[Alert]
-    F -->|Validated snapshot import| G[Analyst investigation]
-    G --> H[Incident documentation]
-    H --> I[Independent privacy review]
-```
+<p align="center">
+  <img src="assets/medishield-architecture.svg" alt="MediShield SOC verified security lifecycle" width="100%" />
+</p>
 
 > Architectural boundary: MediShield uses a human-initiated, validated alert-snapshot import; it does not claim a live Wazuh API integration or a production healthcare deployment.
 
@@ -100,15 +92,9 @@ I built a Chrome Manifest V3 extension with explainable, deterministic risk scor
 
 I use an isolated VMware lab to practice the full monitoring path rather than treating tools as standalone installations. Documented work includes Windows and Ubuntu systems, Sysmon and Windows Event Logs, a Wazuh agent/server pipeline, Event ID 7040 investigation, Nmap discovery, Wireshark packet analysis, and troubleshooting telemetry gaps.
 
-```mermaid
-flowchart LR
-    A[Windows activity] --> B[Sysmon / Windows Event Logs]
-    B --> C[Wazuh agent]
-    C --> D[Wazuh manager]
-    D --> E[Indexer]
-    E --> F[Dashboard]
-    F --> G[Analyst investigation]
-```
+<p align="center">
+  <img src="assets/homelab-architecture.svg" alt="Security operations home lab architecture" width="100%" />
+</p>
 
 > The home lab is currently documented in my [portfolio](https://sangam-dev.vercel.app); a dedicated public evidence repository is the next documentation step.
 
